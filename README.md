@@ -16,5 +16,5 @@ Things I learnt
 How to add css grid boxes and scrolling into view styling of html elements as well as further enhancing my understanding around css styling of elements.
 
 Screenshot of Live app
-[https://uraz04.github.io/bootstrap-portfolio/](![image](https://user-images.githubusercontent.com/69035726/200685365-4ae94960-6a51-4938-8bed-de51f1b9fa18.png)
+[uraz04 github io_bootstrap-portfolio_](![image](https://user-images.githubusercontent.com/69035726/200685365-4ae94960-6a51-4938-8bed-de51f1b9fa18.png)
 )
