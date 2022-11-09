@@ -7,20 +7,22 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Usmans Portfolio</title>
   <!-- My Bootstrap links-->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" >
   <link rel="stylesheet" href="./assets/css/style.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <!-- main logo / nav --> 
   <nav class="navbar navbar-expand-lg navbar-light bg-light customNav" id="navMain">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand navbar-expand-lg" href="#">
             <img src="./assets/images/user.svg">Potfolio</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
-
+            
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
@@ -30,16 +32,19 @@
                 <a class="nav-link" href="#contact">Contact me</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">My Work</a>
+                    <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">My Work</a> -->
                     
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#aboutme">HTML/ CSS</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#reactjs">ReactJS</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#functions">Javascript</a>
-                    </div>
+                        <div class="dropdown">
+                          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                          My Work
+                          </button>
+                          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                          <li><a class="dropdown-item" href="#frontend">HTML/ CSS</a></li>
+                          <li><a class="dropdown-item" href="#reactjs">ReactJS</a></li>
+                          <li><a class="dropdown-item" href="#functions">Javascript</a></li>
+                          </ul>
+                        </div>
                 </li>
                 <li class="nav-item">
                 <a class="btn btn-primary btn-lg navCTA" href="#" role="button">Search</a>
@@ -47,117 +52,117 @@
             </ul>
         </div>
   </nav>
-      <!-- Jumbotron -->
-      <div class="jumbotron">
-        <h1 class="display-4">Follow my tech journey..</h1>
-        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-      </div>
-      <!-- End jumbotron -->
-  <main class="page-wrapper">
-    <!-- about me -->
-        <!-- Cards -->
+<!-- Jumbotron -->
+<div class="jumbotron">
+  <h1 class="display-4">Follow my tech journey..</h1>
+  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+  <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+</div>
+<!-- End jumbotron -->
+<main class="page-wrapper">
+<!-- about me -->
+  <!-- Cards -->
 <div class="container-fluid content">
-            <div class="row valueProp" class="showsNear" id="mycards">
-              <!-- Card 1 -->
-              <div class="cardContainer col-lg-4 col-md-4 col-sm-6" id="aboutme">
-                <div class="card">
-                  <img src="./assets/images/coding.jpeg" class="card-img-top" alt="..." style="height:100%" width="100%">
-                  <div class="card-body">
-                    <h5 class="card-title">About me</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <a target="_blank" href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
-                </div>
-              </div>
-        <!-- End card 1 -->
-        <!-- Card 2 -->
-        <div class="cardContainer col-lg-4 col-md-4 col-sm-6" id="work">
-            <div class="card">
-              <img src="./assets/images/html-css-beginners.jpg" class="card-img-top" alt="..." style="height:100%" width="100%">
-              <div class="card-body">
-                <h5 class="card-title">My Work</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <a target="_blank" href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
+      <div class="row valueProp" class="showsNear" id="mycards">
+        <!-- Card 1 -->
+        <div class="cardContainer col-lg-4 col-md-4 col-sm-6" id="aboutme">
+          <div class="card">
+            <img src="./assets/images/coding.jpeg" class="card-img-top" alt="..." style="height:100%" width="100%">
+            <div class="card-body">
+              <h5 class="card-title">About me</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <a target="_blank" href="#" class="btn btn-primary">Go somewhere</a>
             </div>
           </div>
-        <!-- End card 2 -->
-        <!-- Card 3 -->
-        <div class="cardContainer col-lg-4 col-md-4 col-sm-6">
-            <div class="card">
-              <img src="./assets/images/html-css-beginners.jpg" class="card-img-top" alt="..." style="height:100%" width="100%">
-              <div class="card-body">
-                <h5 class="card-title">Frontend Technologies</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <a target="_blank" href="https://html.com/" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
         </div>
-        <!-- End card 3 -->
-        <!-- Card 4 -->
-        <div class="cardContainer col-lg-4 col-md-4 col-sm-6" id="reactjs">
-            <div class="card">
-              <img src="./assets/images/reactLogo.webp" class="card-img-top" alt="..." style="height:100%" width="100%">
-              <div class="card-body">
-                <h5 class="card-title">Modern UI</h5>
-                <h6 class="card-title">ReactJS</h6>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <a target="_blank" href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
+  <!-- End card 1 -->
+  <!-- Card 2 -->
+  <div class="cardContainer col-lg-4 col-md-4 col-sm-6" id="work">
+      <div class="card">
+        <img src="./assets/images/html-css-beginners.jpg" class="card-img-top" alt="..." style="height:100%" width="100%">
+        <div class="card-body">
+          <h5 class="card-title">My Work</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <a target="_blank" href="#" class="btn btn-primary">Go somewhere</a>
         </div>
-        <!-- End card 4 -->
-        <!-- Card 5 -->
-        <div class="cardContainer col-lg-4 col-md-4 col-sm-6" id="functions">
-            <div class="card">
-              <img src="./assets/images/JavaScript-Logo.png" class="card-img-top" alt="..." style="height:100%" width="100%">
-              <div class="card-body">
-                <h5 class="card-title">User Functions</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-        </div>
-        <!-- End card 5 -->
-  
+      </div>
     </div>
-</div>
-      <!-- End cards -->
+  <!-- End card 2 -->
+  <!-- Card 3 -->
+  <div class="cardContainer col-lg-4 col-md-4 col-sm-6" id="frontend">
+      <div class="card">
+        <img src="./assets/images/html-css-beginners.jpg" class="card-img-top" alt="..." style="height:100%" width="100%">
+        <div class="card-body">
+          <h5 class="card-title">Frontend Technologies</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <a target="_blank" href="https://html.com/" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+  </div>
+  <!-- End card 3 -->
+  <!-- Card 4 -->
+  <div class="cardContainer col-lg-4 col-md-4 col-sm-6" id="reactjs">
+      <div class="card">
+        <img src="./assets/images/reactLogo.webp" class="card-img-top" alt="..." style="height:100%" width="100%">
+        <div class="card-body">
+          <h5 class="card-title">Modern UI</h5>
+          <h6 class="card-title">ReactJS</h6>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <a target="_blank" href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+  </div>
+  <!-- End card 4 -->
+  <!-- Card 5 -->
+  <div class="cardContainer col-lg-4 col-md-4 col-sm-6" id="functions">
+      <div class="card">
+        <img src="./assets/images/JavaScript-Logo.png" class="card-img-top" alt="..." style="height:100%" width="100%">
+        <div class="card-body">
+          <h5 class="card-title">User Functions</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+  </div>
+  <!-- End card 5 -->
 
-    <!-- portfolio container -->
-    <div class="page-section" id="work">
-      <h2>Skills</h2>
-      <p>The aim of this bootcamp is to learn the trending tool stack for web development. Web development is one aspect I am keen to learn but also to test the code using jest tests and other technologies is also a goal.</p>
-      <ul>
-        <li>ReactJS</li>
-        <li>Javascript</li>
-        <li>HTML/ CSS</li>
-        <li>Bootstrap</li>
-        <li>Jest Tests</li>
-        <li>Git/ Github</li>
-        <li>ReactJS</li>
-        <li>Javascript</li>
-      </ul> 
-    <section class="myGrid">
-      <div class="css" id="grid">
-        <h3>Web Development</h3>
-        <a href="https://html.com/">
-        <img src="./assets/images/web-dev.jpeg" alt="html for beginners" style="height:100%" width="100%">
-        </a>
-    </div>
-    </section>
-    <!-- contact -->
-    <section class="page-section contact" id="contact">
-      <h2>Contact Me</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </section>
-  </main>
-  <footer class="footer1">
-    <a target="_blank" href="https://github.com/Uraz04">Github</a>
-    <a target="_blank" href="https://uk.linkedin.com/">LinkedIn</a>
-    <a target="_blank" href="https://en-gb.facebook.com/">Facebook</a>
-  </footer>
+</div>
+</div>
+<!-- End cards -->
+
+<!-- portfolio container -->
+<div class="page-section" id="work">
+<h2>Skills</h2>
+<p>The aim of this bootcamp is to learn the trending tool stack for web development. Web development is one aspect I am keen to learn but also to test the code using jest tests and other technologies is also a goal.</p>
+<ul>
+  <li>ReactJS</li>
+  <li>Javascript</li>
+  <li>HTML/ CSS</li>
+  <li>Bootstrap</li>
+  <li>Jest Tests</li>
+  <li>Git/ Github</li>
+  <li>ReactJS</li>
+  <li>Javascript</li>
+</ul> 
+<section class="myGrid">
+<div class="css" id="grid">
+  <h3>Web Development</h3>
+  <a href="https://html.com/">
+  <img src="./assets/images/web-dev.jpeg" alt="html for beginners" style="height:100%" width="100%">
+  </a>
+</div>
+</section>
+<!-- contact -->
+<section class="page-section contact" id="contact">
+<h2>Contact Me</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</section>
+</main>
+<footer class="footer1">
+<a target="_blank" href="https://github.com/Uraz04">Github</a>
+<a target="_blank" href="https://uk.linkedin.com/">LinkedIn</a>
+<a target="_blank" href="https://en-gb.facebook.com/">Facebook</a>
+</footer>
 </body>
 
 </html>
