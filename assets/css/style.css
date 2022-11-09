@@ -65,13 +65,15 @@ nav {
 
 .jumbotron {
     background: url(../images/banner.jpeg);
+    height: 50%;
+    width: 100%;
     
 }
 
 .jumbotron h1 {
     color: white;
-    align-items: center;
     padding-left: 15px;
+    padding-top: 50px;
 }
 
 .jumbotron p {
@@ -80,8 +82,13 @@ nav {
     font-weight: 500;
 }
 
+.jumbotron a {
+display: none;
+}
+
 .cardContainer {
     text-align: start;
+    padding-top: 15px;
   }
 
 .btn {
@@ -134,4 +141,23 @@ nav {
     background: url("../images/transparency.png");
     background-color: transparent !important;
     background-size: cover;
+}
+
+.dropdown button {
+  color: black !important;
+  font-size: large;
+  font-weight: 700;
+  border: 2px solid white;
+}
+
+#dropdownMenuButton1 {
+  background-color: black !important;
+}
+
+.sr-only {
+  display: none;
+}
+
+.dropdown-item {
+  background-color: black !important;
 }
