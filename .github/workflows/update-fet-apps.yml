@@ -1,0 +1,39 @@
+name: Update FET Review apps
+
+on:
+  schedule:
+    - cron: '*/2 * * * *' #every 2 minutes
+
+jobs:
+  update-pr-with-main:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        branch: [test/workflow-branch]
+    steps:
+      - name: FET branch to update
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          ref: ${{ matrix.branch }}
+
+      - name: Checkout main
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          ref: main
+      
+      - name: Configure git credentials
+        uses: OleksiyRudenko/gha-git-credentials@v2.1
+        with:
+          token: '${{ secrets.GITHUB_TOKEN }}'
+
+      - name: Checkout FET branch to update
+        run: git checkout ${{ matrix.branch }}
+    
+      - name: Rebase branch with main
+        run: git merge main
+
+      - name: Update remote branch
+        run: git push
