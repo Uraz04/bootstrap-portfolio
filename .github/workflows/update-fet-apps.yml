@@ -23,6 +23,11 @@ jobs:
         with:
           fetch-depth: 0
           ref: main
+      
+      - name: Configure git credentials
+        uses: OleksiyRudenko/gha-git-credentials@v2.1
+        with:
+          token: '${{ secrets.SPGH_TOKEN }}'
 
       - name: Checkout FET branch to update
         run: git checkout ${{ matrix.branch }}
