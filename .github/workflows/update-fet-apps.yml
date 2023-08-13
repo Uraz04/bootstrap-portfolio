@@ -27,7 +27,7 @@ jobs:
       - name: Configure git credentials
         uses: OleksiyRudenko/gha-git-credentials@v2.1
         with:
-          token: '${{ secrets.SPGH_TOKEN }}'
+          token: '${{ secrets.GITHUB_TOKEN }}'
 
       - name: Checkout FET branch to update
         run: git checkout ${{ matrix.branch }}
