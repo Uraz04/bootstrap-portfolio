@@ -25,7 +25,7 @@ jobs:
           ref: main
       
       - name: Configure git credentials
-        uses: OleksiyRudenko/gha-git-credentials@v2.1.1
+        uses: OleksiyRudenko/gha-git-credentials@v2.1
         with:
           token: '${{ secrets.GITHUB_TOKEN }}'
 
