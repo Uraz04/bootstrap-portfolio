@@ -1,5 +1,5 @@
 # bootstrap-portfolio
-The current HTML webpage is a mini portfolio outlining 3 main sections, About me, My work and Contact information. This project also includes refactoring the code for titles, semantic html elements, css grid box as well as keeping the order logical and clear.
+The current HTML webpage is a mini portfolio outlining 3 main sections, About me, My work and Contact information. This project also includes refactoring of code for titles, semantic html elements, css grid box as well as keeping the order logical and clear.
 
 User Story
 AS A marketing agency I WANT a codebase that follows accessibility standards SO THAT our own site is optimized for search engines
